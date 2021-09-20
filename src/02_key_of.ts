@@ -20,11 +20,13 @@ const menuSimple: PizzaMenu = {
     dessert: 'Vanilla ice cream'
 }
 
-function adjustMenu(menu: PizzaMenu, menuEntry: keyof PizzaMenu, change: string) {}
+function adjustMenu(menu: PizzaMenu, menuEntry: keyof PizzaMenu, change: string, props?: characterProps) {}
 
 adjustMenu(menuSimple, 'pizza', 'Prosciuto')
 
 adjustMenu(menuSimple, 'beverage', 'Beer')
+
+adjustMenu(menuSimple, 'dessert', 'ice cream', 'movie')
 
 // adjustMenu(menuSimple, 'cofee', 'Beer') // Error
 
